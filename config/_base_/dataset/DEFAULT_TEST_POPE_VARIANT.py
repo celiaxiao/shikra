@@ -6,32 +6,32 @@ POPE_TEST_COMMON_CFG = dict(
 DEFAULT_TEST_POPE_VARIANT = dict(
     COCO_POPE_RANDOM_q_a=dict(
         **POPE_TEST_COMMON_CFG,
-        filename='{{fileDirname}}/../../../data/coco_pope_random.jsonl',
+        filename='/fast-vol/dataset/shikra/coco_pope_random.jsonl',
         template_file=r'{{fileDirname}}/template/VQA.json'
     ),
     COCO_POPE_RANDOM_q_bca=dict(
         **POPE_TEST_COMMON_CFG,
-        filename='{{fileDirname}}/../../../data/coco_pope_random.jsonl',
+        filename='/fast-vol/dataset/shikra/coco_pope_random.jsonl',
         template_file=r'{{fileDirname}}/template/VQA_BCoT.json'
     ),
     COCO_POPE_POPULAR_q_a=dict(
         **POPE_TEST_COMMON_CFG,
-        filename='{{fileDirname}}/../../../data/coco_pope_popular.jsonl',
+        filename='/fast-vol/dataset/shikra/coco_pope_popular.jsonl',
         template_file=r'{{fileDirname}}/template/VQA.json'
     ),
     COCO_POPE_POPULAR_q_bca=dict(
         **POPE_TEST_COMMON_CFG,
-        filename='{{fileDirname}}/../../../data/coco_pope_popular.jsonl',
+        filename='/fast-vol/dataset/shikra/coco_pope_popular.jsonl',
         template_file=r'{{fileDirname}}/template/VQA_BCoT.json'
     ),
     COCO_POPE_ADVERSARIAL_q_a=dict(
         **POPE_TEST_COMMON_CFG,
-        filename='{{fileDirname}}/../../../data/coco_pope_adversarial.jsonl',
+        filename='/fast-vol/dataset/shikra/coco_pope_adversarial.jsonl',
         template_file=r'{{fileDirname}}/template/VQA.json'
     ),
     COCO_POPE_ADVERSARIAL_q_bca=dict(
         **POPE_TEST_COMMON_CFG,
-        filename='{{fileDirname}}/../../../data/coco_pope_adversarial.jsonl',
+        filename='/fast-vol/dataset/shikra/coco_pope_adversarial.jsonl',
         template_file=r'{{fileDirname}}/template/VQA_BCoT.json'
     ),
 )
@@ -44,7 +44,7 @@ DEFAULT_TEST_POPE_VARIANT = dict(
 #     for v, t in zip(versions, templates):
 #         print(f"""{n}_{v}=dict(
 #     **POPE_TEST_COMMON_CFG,
-#     filename=f'{{fileDirname}}/../../../data/{n.lower()}.jsonl',
+#     filename=f'/fast-vol/dataset/shikra/{n.lower()}.jsonl',
 #     template_file=r'{{{fileDirname}}}/template/{t}.json'
 # ),"""
 #               )

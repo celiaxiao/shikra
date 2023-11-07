@@ -1,8 +1,8 @@
 CLEVR_TRAIN_COMMON_CFG = dict(
     type='ClevrDataset',
-    filename=r'{{fileDirname}}/../../../data/CLEVR_train_questions_with_ans.jsonl',
-    image_folder=r'zz1424:s3://publicdataset_33/CLEVR/unzip/CLEVR_v1.0/images/train',
-    scene_graph_file=r"{{fileDirname}}/../../../data/CLEVR_train_scenes.jsonl",
+    filename=r'/fast-vol/dataset/shikra/CLEVR_train_questions_with_ans.jsonl',
+    image_folder=r'/fast-vol/dataset/CLEVR/images',
+    scene_graph_file=r"/fast-vol/dataset/shikra/CLEVR_train_scenes.jsonl",
 )
 
 DEFAULT_TRAIN_CLEVR_VARIANT = dict(

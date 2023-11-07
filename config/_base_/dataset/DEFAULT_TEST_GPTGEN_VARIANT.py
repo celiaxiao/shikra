@@ -1,7 +1,7 @@
 GPTGEN_TEST_COMMON_CFG = dict(
     type='GPT4Gen',
-    filename=r'{{fileDirname}}/../../../data/GPT4GEN_BoxCoT_test.jsonl',
-    image_folder=r'zz1424:s3://production-public-flickr_image/Flickr_Image/unzip/flickr30k_images/flickr30k_images',
+    filename=r'/fast-vol/dataset/shikra/GPT4GEN_BoxCoT_test.jsonl',
+    image_folder=r'/fast-vol/dataset/flickr30k/images',
 )
 
 DEFAULT_TEST_GPTGEN_VARIANT = dict(

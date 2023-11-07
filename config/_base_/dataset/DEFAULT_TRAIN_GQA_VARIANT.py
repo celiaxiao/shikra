@@ -1,9 +1,9 @@
 GQA_TRAIN_COMMON_CFG = dict(
     type='GQADataset',
-    filename=r'{{fileDirname}}/../../../data/gqa_question_balanced_with_cot.jsonl',
-    image_folder=r'zz1424:s3://publicdataset_11/GQA/unzip/images',
-    scene_graph_file=r"{{fileDirname}}/../../../data/gqa_scene_graph_data.jsonl",
-    scene_graph_index=r"{{fileDirname}}/../../../data/gqa_scene_graph_index.json",
+    filename=r'/fast-vol/dataset/shikra/gqa_question_balanced_with_cot.jsonl',
+    image_folder=r'/fast-vol/dataset/coco',
+    scene_graph_file=r"/fast-vol/dataset/shikra/gqa_scene_graph_data.jsonl",
+    scene_graph_index=r"/fast-vol/dataset/shikra/gqa_scene_graph_index.json",
 )
 
 DEFAULT_TRAIN_GQA_VARIANT = dict(

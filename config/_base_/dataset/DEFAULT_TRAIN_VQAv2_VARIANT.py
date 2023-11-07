@@ -1,7 +1,7 @@
 VQAv2_TRAIN_COMMON_CFG = dict(
     type='VQAv2Dataset',
-    filename=r'{{fileDirname}}/../../../data/v2_OpenEnded_mscoco_train2014_questions.jsonl',
-    image_folder=r'zz1424:s3://publicdataset_49/VQAv2/unzip/',
+    filename=r'/fast-vol/dataset/shikra/v2_OpenEnded_mscoco_train2014_questions.jsonl',
+    image_folder=r'/fast-vol/dataset/coco',
     template_file=r"{{fileDirname}}/template/VQA.json",
 )
 

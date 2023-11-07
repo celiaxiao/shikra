@@ -1,21 +1,21 @@
 POINT_TRAIN_COMMON_CFG_LOCAL = dict(
     type='Point_QA_local',
-    filename='{{fileDirname}}/../../../data/pointQA_local_train.jsonl',
-    image_folder='zz1424:s3://publicdataset_8/Visual_Genome_Dataset_V1.2/unzip/data',
+    filename='/fast-vol/dataset/shikra/pointQA_local_train.jsonl',
+    image_folder='/fast-vol/dataset/visual-genome',
     template_file=r"{{fileDirname}}/template/VQA.json",
 )
 
 POINT_TRAIN_COMMON_CFG_TWICE = dict(
     type='Point_QA_twice',
-    filename='{{fileDirname}}/../../../data/pointQA_twice_train.jsonl',
-    image_folder='zz1424:s3://publicdataset_8/Visual_Genome_Dataset_V1.2/unzip/data',
+    filename='/fast-vol/dataset/shikra/pointQA_twice_train.jsonl',
+    image_folder='/fast-vol/dataset/visual-genome',
     template_file=r"{{fileDirname}}/template/VQA.json",
 )
 
 POINT_TRAIN_COMMON_CFG_V7W = dict(
     type='V7W_POINT',
-    filename='{{fileDirname}}/../../../data/v7w_pointing_train.jsonl',
-    image_folder='sh41:s3://MultiModal/Monolith/academic/v7w/data',
+    filename='/fast-vol/dataset/shikra/v7w_pointing_train.jsonl',
+    image_folder='/fast-vol/dataset/visual7w/images',
     template_file=r"{{fileDirname}}/template/VQA.json",
 )
 

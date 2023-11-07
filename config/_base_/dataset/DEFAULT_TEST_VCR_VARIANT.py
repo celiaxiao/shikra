@@ -1,13 +1,13 @@
 VCR_VAL_COMMON_CFG = dict(
     type='VCRDataset',
-    image_folder=r'sh41:s3://MultiModal/Monolith/academic/vcr/vcr1images',
-    filename=r'{{fileDirname}}/../../../data/vcr_val.jsonl',
+    image_folder=r'/fast-vol/dataset/vcr/vcr1images',
+    filename=r'/fast-vol/dataset/shikra/vcr_val.jsonl',
 )
 
 VCR_TEST_COMMON_CFG = dict(
     type='VCRPredDataset',
-    image_folder=r'sh41:s3://MultiModal/Monolith/academic/vcr/vcr1images',
-    filename=r'{{fileDirname}}/../../../data/vcr_test.jsonl',
+    image_folder=r'/fast-vol/dataset/vcr/vcr1images',
+    filename=r'/fast-vol/dataset/shikra/vcr_test.jsonl',
 )
 
 DEFAULT_TEST_VCR_VARIANT = dict(
@@ -35,5 +35,5 @@ DEFAULT_TEST_VCR_VARIANT = dict(
 # for split in splits:
 #     for v in versions:
 #         name = f"VCR_{split}_{v.replace('-', '_')}"
-#         filename = fr'{{fileDirname}}/../../../data/vcr_{split}.jsonl'
+#         filename = fr'/fast-vol/dataset/shikra/vcr_{split}.jsonl'
 #         print(f"{name}=dict(**{ccfg}, version='{v}', filename=r'{filename}'),")

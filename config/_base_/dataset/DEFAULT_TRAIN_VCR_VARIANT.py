@@ -1,7 +1,7 @@
 VCR_TRAIN_COMMON_CFG = dict(
     type='VCRDataset',
-    filename=r'{{fileDirname}}/../../../data/vcr_train.jsonl',
-    image_folder=r'sh41:s3://MultiModal/Monolith/academic/vcr/vcr1images',
+    filename=r'/fast-vol/dataset/shikra/vcr_train.jsonl',
+    image_folder=r'/fast-vol/dataset/vcr/vcr1images',
 )
 
 DEFAULT_TRAIN_VCR_VARIANT = dict(

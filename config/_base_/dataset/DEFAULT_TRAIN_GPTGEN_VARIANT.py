@@ -1,7 +1,7 @@
 GPTGEN_TRAIN_COMMON_CFG = dict(
     type='GPT4Gen',
-    filename=r'{{fileDirname}}/../../../data/GPT4GEN_BoxCoT_train.jsonl',
-    image_folder=r'zz1424:s3://production-public-flickr_image/Flickr_Image/unzip/flickr30k_images/flickr30k_images',
+    filename=r'/fast-vol/dataset/shikra/GPT4GEN_BoxCoT_train.jsonl',
+    image_folder=r'/fast-vol/dataset/flickr30k/images',
 )
 
 DEFAULT_TRAIN_GPTGEN_VARIANT = dict(
@@ -12,7 +12,7 @@ DEFAULT_TRAIN_GPTGEN_VARIANT = dict(
     GPT4GEN_RD_QBC=dict(
         type=GPTGEN_TRAIN_COMMON_CFG['type'],
         image_folder=GPTGEN_TRAIN_COMMON_CFG['image_folder'],
-        filename='{{fileDirname}}/../../../data/GPT4GEN_RD_BoxCoT_train.jsonl',
+        filename='/fast-vol/dataset/shikra/GPT4GEN_RD_BoxCoT_train.jsonl',
         version='bc',
         template_file=r"{{fileDirname}}/template/VQA_BCoT.json"),
 )

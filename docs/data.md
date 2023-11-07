@@ -19,8 +19,8 @@ For example, if you are working with the Flickr30k trainset in `config/_base_/da
 ```python
 flickr=dict(
     type='FlickrDataset',
-    filename=r'{{fileDirname}}/../../../data/CWB_flickr30k_train.jsonl',
-    image_folder=r'zz1424:s3://production-public-flickr_image/Flickr_Image/unzip/flickr30k_images/flickr30k_images',
+    filename=r'/fast-vol/dataset/shikra/CWB_flickr30k_train.jsonl',
+    image_folder=r'/fast-vol/dataset/flickr30k/images',
     template_file=r'{{fileDirname}}/template/flickr30k.json',
     ),
 ```
@@ -30,7 +30,7 @@ to
 ```python
 flickr=dict(
     type='FlickrDataset',
-    filename=r'{{fileDirname}}/../../../data/CWB_flickr30k_train.jsonl',
+    filename=r'/fast-vol/dataset/shikra/CWB_flickr30k_train.jsonl',
     image_folder=r'path/to/flickr30k_images/on/your/computer',
     template_file=r'{{fileDirname}}/template/flickr30k.json',
     ),
