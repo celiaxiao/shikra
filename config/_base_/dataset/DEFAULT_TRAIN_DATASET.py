@@ -18,7 +18,7 @@ DEFAULT_TRAIN_DATASET = dict(
     rec=dict(
         type='RECDataset',
         filename=r'/fast-vol/dataset/shikra/REC_ref3_train.jsonl',
-        image_folder=r'/fast-vol/dataset/cocotrain2014/',
+        image_folder=r'/fast-vol/dataset/coco/train2014/',
         template_file=r'{{fileDirname}}/template/REC.json',
     ),
     recvg=dict(
@@ -30,7 +30,7 @@ DEFAULT_TRAIN_DATASET = dict(
     reg=dict(
         type='REGDataset',
         filename=r'/fast-vol/dataset/shikra/REC_ref3_train.jsonl',
-        image_folder=r'/fast-vol/dataset/cocotrain2014/',
+        image_folder=r'/fast-vol/dataset/coco/train2014/',
         template_file=r'{{fileDirname}}/template/REG.json',
     ),
     gc=dict(
@@ -42,23 +42,23 @@ DEFAULT_TRAIN_DATASET = dict(
     caption=dict(
         type='CaptionDataset',
         filename=r'/fast-vol/dataset/shikra/CAP_coco2014_train.jsonl',
-        image_folder=r'openmmlab1424:s3://openmmlab/datasets/detection/coco/train2014/',
+        image_folder=r'/fast-vol/dataset/coco/train2014/',
         template_file=r'{{fileDirname}}/template/image_cap.json',
     ),
     llavacc3m=dict(
         type='InstructDataset',
         filename=r"/fast-vol/dataset/shikra/llava_cc3m.jsonl",
-        image_folder=r'sh41:s3://MultiModal/Monolith/academic/llava-pretrain/data/558K_imgs',  # TODO: zz make folder name mistake
+        image_folder=r'/fast-vol/dataset/LLaVA-CC3M-Pretrain-595K',  # TODO: zz make folder name mistake
     ),
     llavalcs=dict(
         type='InstructDataset',
         filename=r"/fast-vol/dataset/shikra/blip_laion_cc_sbu_558k.jsonl",
-        image_folder=r'sh41:s3://MultiModal/Monolith/academic/llava-pretrain/data/595K_imgs',  # TODO: zz make folder name mistake
+        image_folder=r'/fast-vol/dataset/LLaVA-Pretrain',  # TODO: zz make folder name mistake
     ),
     instruct=dict(
         type='InstructDataset',
         filename=r'/fast-vol/dataset/shikra/llava_instruct_150k.jsonl',
-        image_folder=r'zz1424:s3://PublicDatalist/public_datalist_6_unzip/train2014',
+        image_folder=r'/fast-vol/dataset/coco/train2014',
         add_coco_prefix=True,
     ),
     **_base_.DEFAULT_TRAIN_GQA_VARIANT,
