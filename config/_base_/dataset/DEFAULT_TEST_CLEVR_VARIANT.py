@@ -1,7 +1,7 @@
 CLEVR_TEST_COMMON_CFG = dict(
     type='ClevrDataset',
     filename=r'/fast-vol/dataset/shikra/CLEVR_val_questions_with_ans.jsonl',
-    image_folder=r'zz1424:s3://publicdataset_33/CLEVR/unzip/CLEVR_v1.0/images/val',
+    image_folder=r'/fast-vol/dataset/CLEVR/images/val',
     scene_graph_file=None,
 )
 
